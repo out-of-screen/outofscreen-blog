@@ -13,24 +13,33 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Blog - OUT OF SCREEN
+title: OUT OF SCREEN - Blog
 email: adrien@outofscreen.com
 description: >- # this means to ignore newlines until "baseurl:"
   Blog of the OUT OF SCREEN company, tech posts about Rails, Python, Javascript
   and software development in general
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.outofscreen.com" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/assets/images/site-logo.png"
 twitter_username: out_of_screen
-github_username: outofscreen
+github_username: out-of-screen
+repository: out-of-screen/outofscreen-blog
 
 # Build settings
 markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.15.2"
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "default"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+permalink: /:categories/:title/
+
+tag_archive:
+  type: liquid
+  path: /tags/
 
 defaults:
   # _posts
@@ -44,6 +53,12 @@ defaults:
       comments: true
       share: true
       related: true
+
+# Social Sharing
+twitter:
+  username: &twitter "out_of_screen"
+facebook: false
+og_image: "/assets/images/site-logo.png" # Open Graph/Twitter default site image
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
