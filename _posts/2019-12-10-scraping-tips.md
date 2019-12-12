@@ -121,4 +121,4 @@ Figuring out how to bypass another developer's protections can be a really fun p
 
 At [OUT OF SCREEN](https://www.outofscreen.com) we love scraping websites, and we're looking for new missions so feel free to [reach out ✉️](mailto:adrien@outofscreen.com)!
 
-*Written by Ismaël Attoumani and Adrien Di Pasquale*
+*Written by [Ismaël Attoumani](https://github.com/maelorn) and [Adrien Di Pasquale](https://twitter.com/hypertextadrien/), proofread by [Antoine Augusti](https://twitter.com/AntoineAugusti)*
