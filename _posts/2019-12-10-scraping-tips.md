@@ -18,7 +18,7 @@ Here is a list of recommendations, more or less obvious, but always useful to re
 
 ## Keep It Simple, Stupid
 
-Nowadays, websites frontends are quit complex and often use powerful frameworks like React.
+Websites have become complex with Single Page Applications and React, Vue...
 Do not forget that browsing websites comes down to HTTP requests being sent to servers.
 
 There are two approaches to scraping:
@@ -36,6 +36,8 @@ Sometimes the second one is necessary, if the interactions between the JS and th
 Look for public APIs that return JSON instead of HTML that you have to parse.
 Use your browser's network tab XHR filter to do so.
 This is often the case with Single Page Applications.
+
+![Product Hunt GraphQL API](https://i.imgur.com/i6erv0B.gif)
 
 Mobile applications also often use an API to collect data from the servers.
 Most of the time this API will be somehow authenticated, but it is sometimes very easy to find a working token.
@@ -86,9 +88,9 @@ I often copy them in my IDE, search and replace all `-H` with `-H \n` (with rege
 
 ## Best practices for scrapers
 
-- Fetch first then parse. This way you won't have to refetch if there is a bug in your parser.
+- Fetch first, store the response and then parse it. This way you won't have to refetch if there is a bug in your parser.
 - You can also use caching locally when developping to bypass this problem
-- Distribute the workload in successive steps. eg. for a cooking website, first retrieve all recipes urls and then fetch them instead of directly following every nested link.
+- Distribute the workload in successive steps. eg. for a cooking website, first retrieve all recipes URLs and then fetch them instead of directly following every nested link.
 
 
 ## It works on my computer™️
